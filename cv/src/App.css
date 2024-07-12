@@ -161,4 +161,11 @@ h4 {
     padding: 20px;
     flex-direction: column;
   }
+  .header {
+    margin: 1.25rem auto;
+  }
+  
+  
+  
+
 }
