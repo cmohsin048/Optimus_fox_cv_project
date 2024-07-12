@@ -116,6 +116,7 @@ h4 {
   .sidebar {
     transform: translateX(-200%);
     transition: transform 0.5s ease;
+    max-width: 250px;
   }
 
   #hamburger {
@@ -149,6 +150,7 @@ h4 {
     width: 250px;
     max-width: none;
     height: auto;
+    display: block;
 
     background: white;
     border-right: none;
