@@ -1,15 +1,164 @@
-/* .header h1 {
-  margin: 0;
-  font-size: 36px;
+h4 {
   font-family: Arial, sans-serif;
-} */
+  font-size: 18px;
+}
 
 .header h2 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #777;
   font-family: Arial, sans-serif;
 }
-.header{
-  margin:20px 0px 0px 20px ;
+
+.header {
+  margin: 1.25rem 0 0 5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 40%;
+  padding: 3.125rem 0 0 1.25rem;
+  padding-right: 1.25rem;
+  border-right: 1px solid #777;
+  position: relative;
+}
+
+.sidebar .close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 50%;
+  margin: 3.125rem 1.25rem 0rem 1.25rem;
+  padding-right: 1.25rem;
+  border-top: 1px solid #777;
+}
+
+.phone,
+.email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  margin-top: 1.25rem;
+  border-bottom: 1px solid #777;
+}
+
+.contact h4 {
+  margin-bottom: 1.25rem;
+}
+
+.institute {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  border-bottom: 1px solid #777;
+  margin: 1.25rem 0 0.625rem 0;
+}
+
+.institute p {
+  max-width: 80%;
+}
+
+.links p a {
+  color: #777;
+}
+
+.Skill {
+  margin: 1.25rem 0 0.625rem 0;
+}
+
+.Skills-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.body {
+  display: flex;
+  padding: 3.125rem;
+}
+
+.aboutme {
+  margin-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #777;
+}
+
+.aboutme ul {
+  color: #777;
+}
+
+.aboutme h4 {
+  margin-bottom: 1.25rem;
+}
+
+.crossham {
+  display: none;
+}
+
+#hamburger {
+  display: none;
+}
+
+/* Media Queries */
+@media (max-width: 740px) {
+  .sidebar {
+    transform: translateX(-200%);
+    transition: transform 0.3s ease;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .crossham {
+    display: block;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+
+  .hamburger.hidden {
+    display: none;
+  }
+
+  .sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 240px;
+    max-width: none;
+    background: white;
+    border-right: none;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .Main {
+    max-width: 100%;
+  }
+
+  .body {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
