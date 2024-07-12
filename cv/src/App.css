@@ -155,9 +155,11 @@ h4 {
 
   .Main {
     max-width: 100%;
+    margin: 3.125rem 0rem 0rem 0rem;
   }
 
   .body {
+    max-width: 100%;
     padding: 20px;
     flex-direction: column;
   }
