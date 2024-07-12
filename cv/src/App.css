@@ -145,8 +145,10 @@ h4 {
     left: 0;
     top: 0;
     bottom: 0;
-    width: 240px;
+    width: 250px;
     max-width: none;
+    height: auto;
+
     background: white;
     border-right: none;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
