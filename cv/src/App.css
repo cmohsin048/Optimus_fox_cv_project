@@ -162,10 +162,7 @@ h4 {
     flex-direction: column;
   }
   .header {
-    margin: 1.25rem auto;
+    margin: 1.25rem 0 0 1rem;
   }
   
-  
-  
-
 }
